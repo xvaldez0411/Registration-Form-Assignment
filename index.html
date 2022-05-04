@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <h1>Registration Form for Personal Chef</h1>
+    <img src="https://thumbs.dreamstime.com/b/colourful-various-herbs-spices-cooking-dark-background-herbs-spices-cooking-dark-background-113655482.jpg"
+        alt="spices" width="300">
+    <form>
+        <div>
+            <input type="text" name="firstname" placeholder="First Name">
+        </div>
+        <br>
+        <div>
+            <input type="text" name="lastname" placeholder="Last Name">
+        </div>
+        <br>
+        <div>
+            <input type="email" name="email" placeholder="Enter Email Address">
+        </div>
+        <br>
+        <div>
+            <input type="password" name="password" placeholder="Enter Password">
+        </div>
+        <br>
+        <div>
+            <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+        </div>
+        <br>
+        <div>
+            <input type="text" name="wage" placeholder="$Desired Hourly Wage" id="wage">
+        </div>
+        <br>
+        <div>
+            Birthday:<input type="date" name="birthday" id="birthday">
+        </div>
+        <br>
+        <div id="gender">
+            <label>Gender:</label>
+            <input type="radio" name="gender">Male
+            <input type="radio" name="gender">Female
+            <input type="radio" name="gender">Non-Binary
+            <input type="radio" name="gender">I prefer not to answer
+        </div>
+        <br>
+        <div id="experience">
+            <label>How long have you been cooking?</label>
+            <br>
+            <select>
+                <option selected value="experience">Please choose an option</option>
+                <option value="beginner">6 months - 1 year</option>
+                <option value="intermediate">1 year - 2 years</option>
+                <option value="expert">2 years+</option>
+
+            </select>
+        </div>
+        <br>
+        <div id="cuisine">
+            <label>What type of cuisine have you prepared? (select all that apply)</label>
+            <br>
+            <input type="checkbox" name="french">French
+            <input type="checkbox" name="chinese">Chinese
+            <input type="checkbox" name="japanese">Japanese
+            <input type="checkbox" name="indian">Indian
+            <input type="checkbox" name="italian">Italian
+            <input type="checkbox" name="greek">Greek
+            <input type="checkbox" name="spanish">Spanish
+        </div>
+        <br>
+        <div>
+            <label for="description">Tell us about yourself:</label>
+            <br>
+            <textarea name="description" id="description" cols="50" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <label>Submit Resume:</label>
+            <br>
+            <input type="file" name="resume">
+        </div>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+
+</html>
